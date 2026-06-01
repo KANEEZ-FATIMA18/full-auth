@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin:[process.env.FRONTEND_URL, "https://full-auth-frontend.vercel.app"],
+    origin:[process.env.FRONTEND_URL, process.env.HOSTED_FRONTEND_URL],
     credentials: true,
 }))
 
